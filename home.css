@@ -1,0 +1,142 @@
+/* HEADER KISMI */
+.header {
+    height: 60px;
+    background: #eee;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #4e5052;
+}
+
+.logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navbar ul li {
+    float: left;
+    font-size: 23px;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.active {
+    background: #ff6e00;
+    padding: 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    padding: 5px;
+}
+
+.navbar ul li a:active,
+.navbar ul li a:hover {
+    background: #ff6e00;
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+    margin-top: 250px;
+}
+
+h1 {
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    width: 990px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.slider {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    border: 4px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+img {
+    width: 500px;
+    height: 600px;
+}
+
+.slider-content {
+    position: absolute;
+    width: 1000%;
+    left: 0;
+    animation: slide 30s infinite;
+}
+
+.slider-item {
+    width: 20%;
+    float: left;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(-500px);
+    }
+
+    20% {
+        transform: translateX(-500px);
+    }
+}
+
+.slider-content:hover {
+    animation-play-state: paused;
+}
+
+.hakkımızda {
+    margin-top: 5px;
+}
+
+.p1 {
+    font-size: 18px;
+}
+
+.iletişim {
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.Harita {
+    text-align: center;
+    padding-top: 15px;
+    isolation: isolate;
+}

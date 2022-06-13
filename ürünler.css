@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+}
+
+/* HEADER KISMI */
+.header {
+    height: 60px;
+    background: #eee;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #4e5052;
+}
+
+.logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navbar ul li {
+    float: left;
+    font-size: 23px;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.active {
+    background: #ff6e00;
+    padding: 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.ürünler {
+    float: left;
+    border-radius: 3%;
+}
+
+.ürün1 {
+    width: 1600px;
+    height: 800px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 2px solid #e0e1e1;
+    border-radius: 3%;
+    box-sizing: border-box;
+}
+
+.başlık {
+    text-align: center;
+    font-size: 25px;
+}
+
+.bezdolap-ul {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(28, 134, 179);
+    background-color: rgb(28, 134, 179);
+    border: solid 1px rgb(27, 124, 166);
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: .5s; 
+    margin-top: 25px;
+    isolation: isolate;
+    transition: .5s;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+button:hover {
+    background-color: #03a9f4;
+    text-decoration-color: initial;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(229, 224, 216);
+}
+
+
+
+/* Hareket eden image kısmı başlangıç*/
+.img1 {
+    width: 380px;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-left: 6px;
+
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+
+    transform-origin: center;
+    transform:perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+
+.img1 {
+    max-width: 600px;
+    max-height: 350px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img1:hover img {
+    opacity: 0.3;
+}
+
+.img1 img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+/* Hareket eden image kısmı bitiş*/
